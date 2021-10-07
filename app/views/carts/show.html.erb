@@ -1,11 +1,1 @@
-<% if notice %>
-  <aside id="notice"><%= notice %></aside>
-<% end %>
-
-<h1>The Pragmatic Cart</h1>
-<ul>
-  <% @cart.line_items.each do |item| %>
-    <li><%= item.quantity %> &times; <%= item.product.title %></li>
-  <% end %>
-</ul>
-
+<%= render @cart %>
